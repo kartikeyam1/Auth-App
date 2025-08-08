@@ -1,0 +1,235 @@
+# Auth-App Project .gitignore
+
+# ==========================================
+# BACKEND (Java/Maven/Spring Boot)
+# ==========================================
+
+# Maven
+backend/target/
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/buildNumber.properties
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
+backend/**/*.class
+
+# Log files
+backend/**/*.log
+backend/logs/
+
+# BlueJ files
+backend/**/*.ctxt
+
+# Mobile Tools for Java (J2ME)
+backend/**/.mtj.tmp/
+
+# Package Files
+backend/**/*.jar
+backend/**/*.war
+backend/**/*.nar
+backend/**/*.ear
+backend/**/*.zip
+backend/**/*.tar.gz
+backend/**/*.rar
+
+# Virtual machine crash logs
+backend/**/hs_err_pid*
+backend/**/replay_pid*
+
+# Spring Boot
+backend/application-*.properties
+backend/application-*.yml
+backend/application-*.yaml
+!backend/src/main/resources/application.properties
+!backend/src/test/resources/application-test.properties
+
+# H2 Database files
+backend/**/*.db
+backend/data/
+backend/**/*.trace.db
+backend/**/*.lock.db
+
+# IDE files
+backend/.idea/
+backend/**/*.iws
+backend/**/*.iml
+backend/**/*.ipr
+backend/.vscode/
+backend/.metadata/
+backend/.recommenders/
+backend/.settings/
+backend/.project
+backend/.classpath
+backend/.factorypath
+
+# NetBeans
+backend/nbproject/private/
+backend/build/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+
+# Eclipse
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+# IntelliJ IDEA
+backend/.idea
+backend/*.iws
+backend/*.iml
+backend/*.ipr
+backend/out/
+
+# ==========================================
+# FRONTEND (Node.js/Vue.js/Vite)
+# ==========================================
+
+# Dependencies
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Runtime data
+frontend/pids
+frontend/*.pid
+frontend/*.seed
+frontend/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+frontend/coverage/
+frontend/*.lcov
+
+# NYC test coverage
+frontend/.nyc_output
+
+# Build outputs
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+
+# Vite
+frontend/.vite/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Editor directories and files
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+frontend/.idea
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# Logs
+frontend/logs
+frontend/*.log
+
+# Optional npm cache directory
+frontend/.npm
+
+# Optional REPL history
+frontend/.node_repl_history
+
+# Output of 'npm pack'
+frontend/*.tgz
+
+# Yarn Integrity file
+frontend/.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+frontend/.cache
+frontend/.parcel-cache
+
+# ==========================================
+# GENERAL PROJECT FILES
+# ==========================================
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# IDE and Editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/.ropeproject
+*.sublime-project
+*.sublime-workspace
+
+# Git
+*.orig
+
+# Documentation build
+docs/_build/
+
+# Python (if any scripts are added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Docker (if added later)
+docker-compose.override.yml
+.dockerignore
+
+# Security and secrets
+*.pem
+*.key
+!*.key.example
+.env.production
+secrets/
+config/secrets.yml
+
+# Test coverage reports
+coverage/
+*.coverage
+.coverage.*
+
+# Miscellaneous
+*.pid
+*.gz
+*.lock
+.cache/
+.tmp/
