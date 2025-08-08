@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import NavBar from './components/NavBar.vue'
 
 export default {
@@ -17,9 +17,6 @@ export default {
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
 }
 </style>
