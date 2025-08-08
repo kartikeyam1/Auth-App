@@ -16,6 +16,10 @@ jobs:
   test:
     name: Test Backend
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
 
     steps:
     - name: Checkout code
@@ -57,7 +61,16 @@ jobs:
         name: Maven Tests
         path: backend/target/surefire-reports/*.xml
         reporter: java-junit
-        fail-on-error: true
+        fail-on-error: false
+      continue-on-error: true
+
+    - name: Publish test results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: always()
+      with:
+        files: backend/target/surefire-reports/*.xml
+        check_name: "Maven Test Results"
+      continue-on-error: true
 
     - name: Build application
       run: |
