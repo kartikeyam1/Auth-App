@@ -4,13 +4,15 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import UserDashboard from '../views/UserDashboard.vue'
 import AdminDashboard from '../views/AdminDashboard.vue'
+import ChangePassword from '../views/ChangePassword.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/login', name: 'Login', component: Login },
   { path: '/register', name: 'Register', component: Register },
   { path: '/user-dashboard', name: 'UserDashboard', component: UserDashboard },
-  { path: '/admin-dashboard', name: 'AdminDashboard', component: AdminDashboard }
+  { path: '/admin-dashboard', name: 'AdminDashboard', component: AdminDashboard },
+  { path: '/change-password', name: 'ChangePassword', component: ChangePassword }
 ]
 
 const router = createRouter({

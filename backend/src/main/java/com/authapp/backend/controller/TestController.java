@@ -24,7 +24,7 @@ import java.util.Optional;
 @RequestMapping("/test")
 @RequiredArgsConstructor
 @Slf4j
-@CrossOrigin(origins = {"http://localhost:5173", "https://kartikeya.github.io"})
+@CrossOrigin
 public class TestController {
 
     private final UserService userService;

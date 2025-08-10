@@ -16,6 +16,41 @@ export const healthService = {
   }
 }
 
+// Authentication Service
+export const authService = {
+  // User login
+  async login(credentials) {
+    const response = await apiClient.post('/auth/login', credentials)
+    return response.data
+  },
+
+  // User logout
+  async logout(sessionId) {
+    const response = await apiClient.post('/auth/logout', {}, {
+      headers: {
+        'X-Session-ID': sessionId
+      }
+    })
+    return response.data
+  },
+
+  // Change password
+  async changePassword(passwordData) {
+    const response = await apiClient.post('/auth/change-password', passwordData)
+    return response.data
+  },
+
+  // Validate session
+  async validateSession(sessionId) {
+    const response = await apiClient.get('/auth/validate', {
+      headers: {
+        'X-Session-ID': sessionId
+      }
+    })
+    return response.data
+  }
+}
+
 // User Management Service
 export const userService = {
   // Get all users
