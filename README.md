@@ -4,7 +4,7 @@ A modern, secure web application built with Vue.js 3 and Spring Boot, featuring 
 
 ## 🚀 Live Demo
 
-🌐 **Frontend Demo**: [https://kartikeya.github.io/Auth-App/](https://kartikeya.github.io/Auth-App/) *(Auto-deployed from main branch)*
+🌐 **Frontend Demo**: [https://kartikeyam1.github.io/Auth-App/](https://kartikeyam1.github.io/Auth-App/) *(Auto-deployed from main branch)*
 
 ## 📋 Project Overview
 
